@@ -22,12 +22,12 @@ const entrepreneurs = [
 var filter70 = entrepreneurs.filter(entrepreneur => entrepreneur.year < 1980 && entrepreneur.year > 1969);
 
 console.log("Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70", entrepreneurs);
-console.log("Voici la liste avec les entrepreneurs nés dans les années 70:", filter70)
+console.log("Voici la liste avec les entrepreneurs nés dans les années 70:", filter70);
 
 
 var fusionFilter = entrepreneurs.map( entrepreneur => ({ first: entrepreneur.first, last: entrepreneur.last}));
-console.log("Sors une array qui contient le prénom et le nom des entrepreneurs")
-console.log("Une array avec", fusionFilter)
+console.log("Sors une array qui contient le prénom et le nom des entrepreneurs");
+console.log("Une array avec", fusionFilter);
 
 const anneeActuelle = new Date().getFullYear();
 console.log(anneeActuelle);
@@ -43,9 +43,9 @@ for (let i = 0; i < entrepreneurs.length; i++) {
   };
   agesActuels.push(inventeurAvecAge);
 }
-console.log("Quel âge aurait chaque inventeur aujourd'hui ?")
-console.log("Petite array des familles avec l'age avec toute les infos plus l'age de chaque entrepreneur rajouté", agesActuels)
+console.log("Quel âge aurait chaque inventeur aujourd'hui ?");
+console.log("Petite array des familles avec l'age avec toute les infos plus l'age de chaque entrepreneur rajouté", agesActuels);
 
 const sortByLast = entrepreneurs.sort((a, b) => a.last.localeCompare(b.last));
-console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille:")
+console.log("Trie les entrepreneurs par ordre alphabétique du nom de famille:");
 console.log("Array avec toutes l'infos de l'array de base trié ordre alphabétique du nom de famille: ", sortByLast);
